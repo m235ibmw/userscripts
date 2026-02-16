@@ -1,20 +1,43 @@
 # userscripts
 
-Tampermonkey userscripts for browser UX enhancements.
+Browser extensions & scripts for GitHub UX enhancements.
 
-## Scripts
+## GitHub Tab Indent
 
-### [github-task-indent.user.js](./github-task-indent.user.js)
+Chrome extension that adds keyboard shortcuts to GitHub's markdown editor.
 
-GitHub の Issue / PR textarea で **Tab / Shift+Tab によるインデント操作** を有効にする。
+### Features
 
-- `Tab` — 現在行（or 選択行）を 2 スペースインデント
-- `Shift+Tab` — 2 スペースアウトデント
-- 複数行選択対応
+| Shortcut | Action |
+|---|---|
+| `Tab` | Indent current line (or selected lines) by 2 spaces |
+| `Shift+Tab` | Outdent current line (or selected lines) by 2 spaces |
+| `[]` + `Space` | Auto-expand to `- [ ] ` (task list item) |
 
-タスクリスト (`- [ ]`) のネストが Slack ライクに操作できる。
+Works in all GitHub textareas — Issues, Pull Requests, Comments.
 
-## Install
+### Install
 
-1. [Tampermonkey](https://www.tampermonkey.net/) を Chrome にインストール
-2. Tampermonkey ダッシュボード → 「+」→ スクリプトの中身をコピペ → 保存
+1. Clone this repo
+
+   ```bash
+   git clone https://github.com/m235ibmw/userscripts.git
+   ```
+
+2. Open `chrome://extensions` in Chrome
+
+3. Enable **Developer mode** (toggle in the top right)
+
+4. Click **Load unpacked**
+
+5. Select the `github-tab-indent-ext/` folder
+
+6. Open any GitHub Issue and try `Tab` in a textarea
+
+### Update
+
+After pulling new changes:
+
+1. Open `chrome://extensions`
+2. Click the reload icon on the "GitHub Tab Indent" card
+3. Reload the GitHub page
