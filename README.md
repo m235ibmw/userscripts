@@ -1,43 +1,43 @@
 # userscripts
 
-Browser extensions & scripts for GitHub UX enhancements.
+GitHub の UX を改善するブラウザ拡張・スクリプト集。
 
 ## GitHub Tab Indent
 
-Chrome extension that adds keyboard shortcuts to GitHub's markdown editor.
+GitHub の Markdown エディタにキーボードショートカットを追加する Chrome 拡張。
 
-### Features
+### 機能
 
-| Shortcut | Action |
+| ショートカット | 動作 |
 |---|---|
-| `Tab` | Indent current line (or selected lines) by 2 spaces |
-| `Shift+Tab` | Outdent current line (or selected lines) by 2 spaces |
-| `[]` + `Space` | Auto-expand to `- [ ] ` (task list item) |
+| `Tab` | 現在行（or 選択行）を 2 スペースインデント |
+| `Shift+Tab` | 現在行（or 選択行）を 2 スペースアウトデント |
+| `[]` + `Space` | `- [ ] ` に自動展開（タスクリスト） |
 
-Works in all GitHub textareas — Issues, Pull Requests, Comments.
+Issue, Pull Request, Comment すべての textarea で動作する。
 
-### Install
+### インストール
 
-1. Clone this repo
+1. このリポジトリをクローン
 
    ```bash
    git clone https://github.com/m235ibmw/userscripts.git
    ```
 
-2. Open `chrome://extensions` in Chrome
+2. Chrome で `chrome://extensions` を開く
 
-3. Enable **Developer mode** (toggle in the top right)
+3. 右上の **デベロッパー モード** を ON にする
 
-4. Click **Load unpacked**
+4. **パッケージ化されていない拡張機能を読み込む** をクリック
 
-5. Select the `github-tab-indent-ext/` folder
+5. `github-tab-indent-ext/` フォルダを選択
 
-6. Open any GitHub Issue and try `Tab` in a textarea
+6. GitHub の Issue を開いて textarea で `Tab` を試す
 
-### Update
+### 更新方法
 
-After pulling new changes:
+`git pull` で最新を取得した後:
 
-1. Open `chrome://extensions`
-2. Click the reload icon on the "GitHub Tab Indent" card
-3. Reload the GitHub page
+1. `chrome://extensions` を開く
+2. 「GitHub Tab Indent」カードのリロードアイコンをクリック
+3. GitHub のページをリロード
